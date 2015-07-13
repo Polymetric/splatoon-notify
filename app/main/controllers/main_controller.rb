@@ -2,7 +2,12 @@
 module Main
   class MainController < Volt::ModelController
     def index
-      # Add code for when the index view is loaded
+
+    end
+
+    def add_email
+      page._emails << { email: page._new_email }
+      page._new_email = ''
     end
 
     private

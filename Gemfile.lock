@@ -168,6 +168,3 @@ DEPENDENCIES
   volt-mailer (~> 0.1.0)
   volt-mongo (~> 0.1.0)
   volt-user_templates (~> 0.4.0)
-
-BUNDLED WITH
-   1.10.5
