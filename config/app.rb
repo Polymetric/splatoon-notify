@@ -8,8 +8,8 @@ Volt.configure do |config|
   # Basic App Info (stuff you should set)
   #######################################
   config.domain = 'splatoon-notify/.com'
-  config.app_name = 'Splatoon-notify/'
-  config.mailer.from = 'Splatoon-notify/ <no-reply@splatoon-notify/.com>'
+  config.app_name = 'splatoon-notify/'
+  config.mailer.from = 'Splatoon-Notify/ <no-reply@splatoon-notify/.com>'
 
   ############
   # App Secret
@@ -77,15 +77,15 @@ Volt.configure do |config|
   # NOTE: The from address is setup at the top
 
   # Normally pony uses /usr/sbin/sendmail if one is installed.  You can specify smtp below:
-  # config.mailer.via = :smtp
-  # config.mailer.via_options = {
-  #   :address        => 'smtp.yourserver.com',
-  #   :port           => '25',
-  #   :user_name      => 'user',
-  #   :password       => 'password',
-  #   :authentication => :plain, # :plain, :login, :cram_md5, no auth by default
-  #   :domain         => "localhost.localdomain" # the HELO domain provided by the client to the server
-  # }
+  config.mailer.via = :smtp
+  config.mailer.via_options = {
+    :address        => 'smtp.mandrillapp.com',
+    :port           => '587',
+    :user_name      => 'austin.is.paxton@gmail.com',
+    :password       => 'cDrHMEmltOtIub2SiZVSiQ',
+    :authentication => :login, # :plain, :login, :cram_md5, no auth by default
+    :domain         => 'splatoon-notify.work' # the HELO domain provided by the client to the server
+  }
 
   #############
   # Message Bus

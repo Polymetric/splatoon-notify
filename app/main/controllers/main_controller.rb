@@ -1,13 +1,21 @@
 # By default Volt generates this controller for your Main component
 module Main
   class MainController < Volt::ModelController
+    model :store
     def index
 
     end
 
-    def add_email
-      page._emails << { email: page._new_email }
-      page._new_email = ''
+    def onboard_user
+      Mailer.deliver('app/main/views/mailers/onboard.email', {to: page._new_email, :via => :smtp})
+    end
+
+    def add_user
+      _users << { name: page._new_name, email: page._new_email }
+      if onboard_user
+        page._new_name = ''
+        page._new_email = ''
+      end
     end
 
     private

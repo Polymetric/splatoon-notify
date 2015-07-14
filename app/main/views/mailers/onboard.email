@@ -1,0 +1,10 @@
+<:Subject>
+  Splatoon/Notify
+
+<:Html>
+  <h1>Welcome {{ name }}</h1>
+
+  <p>Thanks for using Splatoon/Notify. We hope you enjoy the service.</p>
+
+<:Text>
+Welcome {{ name }}! Thanks for using Splatoon/Notify. We hope you enjoy the service.

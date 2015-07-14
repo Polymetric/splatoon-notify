@@ -2,16 +2,37 @@
 SPLATOON/NOTIFY
 
 <:Body>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-sm-12">
       <div class="jumbotron">
-        <h1 class="text-center">SPLATOON/NOTIFY</h1>
 
-        {{ view main_path, 'body', {controller_group: 'main'} }}
+        <h1 class="text-center">SPLATOON/NOTIFY</h1>
+        <h5>We send you the new Splatoon maps whenever they rotate.</h5>
+        <h2 class="text-center">We'll just need a name and email.</h2>
+
+        <div class="form-group">
+          <form class="form-inline" role="form">
+            <input class="form-control" type="text" value="{{ page._new_name }}" placeholder="Name"/>
+            <input class="form-control" type="text" value="{{ page._new_email }}" placeholder="Email"/>
+          </form>
+        </div>
+
+        <div class="btn">
+          <button class="btn btn-primary btn-sm" e-click="add_user">Notify Me!</button>
+        </div>
 
         <div class="footer">
           <p class="text-center">&copy; Austin Paxton {{ Time.now.year }}</p>
+          <p class="text-center">buy me a beer, or help pay for server time!</p>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
         </div>
 
       </div>

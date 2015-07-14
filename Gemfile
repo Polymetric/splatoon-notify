@@ -18,6 +18,10 @@ gem 'volt-user_templates', '~> 0.4.0'
 # Add ability to send e-mail from apps.
 gem 'volt-mailer', '~> 0.1.0'
 
+# To stop Volt from being awful to me.
+gem 'faye-websocket', '0.9.2'
+gem 'websocket-driver', '0.5.4'
+
 # Use rbnacl for message bus encrpytion
 # (optional, if you don't need encryption, disable in app.rb and remove)
 #
