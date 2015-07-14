@@ -41,7 +41,7 @@ Volt.configure do |config|
 
   config.db_driver = 'mongo'
   config.db_name = (config.app_name + '_' + Volt.env.to_s)
-  config.db_host = '172.31.36.242'
+  config.db_host = '172.31.44.122'
   config.db_port = 27017
 
   #####################
