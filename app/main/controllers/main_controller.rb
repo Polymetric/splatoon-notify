@@ -2,8 +2,9 @@
 module Main
   class MainController < Volt::ModelController
     model :store
-    def index
 
+    def index
+      
     end
 
     def onboard_user

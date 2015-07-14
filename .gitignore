@@ -7,3 +7,7 @@ tmp
 .sass-cache
 .DS_Store
 compiled
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
