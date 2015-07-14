@@ -41,8 +41,13 @@ Volt.configure do |config|
 
   config.db_driver = 'mongo'
   config.db_name = (config.app_name + '_' + Volt.env.to_s)
-  config.db_host = '172.31.44.122'
-  config.db_port = 27017
+
+  if ENV['MONGO_URL'].present?
+    config.db_uri = ENV['MONGO_URL'] # you will have to set this on heroku
+  else
+    config.db_host = 'localhost'
+    config.db_port = 27017
+  end
 
   #####################
   # Compression options
