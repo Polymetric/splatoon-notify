@@ -1,0 +1,27 @@
+<:Subject>
+  Splatoon/Notify
+
+<:Html>
+  <h1>New Maps!</h1>
+  <div class="text-center">
+    <h3>Turf War:</h3>
+    <p>{{ MapTasks.printmap(0) }} and {{ MapTasks.printmap(1) }}</p>
+    <h3>Ranked:</h3>
+    <p>{{ MapTasks.printmap(2) }} and {{ MapTasks.printmap(3) }}</p>
+    <h3>Previous Ranked:</h3>
+    <p>{{ MapTasks.printmap(4) }} and {{ MapTasks.printmap(5) }}</p>
+  </div>
+  <div>
+    <p>Thanks for using Splatoon/Notify. We hope you enjoy the service.</p>
+  </div>
+
+<:Text>
+Your new maps are:\n
+Turf War:\n
+{{ MapTasks.printmap(0) }} and {{ MapTasks.printmap(1) }}\n
+Ranked:\n
+{{ MapTasks.printmap(2) }} and {{ MapTasks.printmap(3) }}\n
+Previous Ranked:\n
+{{ MapTasks.printmap(4) }} and {{ MapTasks.printmap(5) }}\n
+
+Thanks for using Splatoon/Notify. We hope you enjoy the service.

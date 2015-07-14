@@ -22,6 +22,19 @@ SPLATOON/NOTIFY
           <button class="btn btn-primary btn-sm" e-click="add_user">Notify Me!</button>
         </div>
 
+        <div class="text-center">
+          <h2>Current Maps!</h2>
+          <h3>Turf War:</h3>
+          <h2>{{ MapTasks.printmap(0) }}</h2>
+          <h2>{{ MapTasks.printmap(1) }}</h2>
+          <h3>Ranked:</h3>
+          <h2>{{ MapTasks.printmap(2) }}</h2>
+          <h2>{{ MapTasks.printmap(3) }}</h2>
+          <h3>Previous Ranked:</h3>
+          <h2>{{ MapTasks.printmap(4) }}</h2>
+          <h2>{{ MapTasks.printmap(5) }}</h2>
+        </div>
+
         <div class="footer">
           <p class="text-center">&copy; Austin Paxton {{ Time.now.year }}</p>
           <p class="text-center">buy me a beer, or help pay for server time!</p>

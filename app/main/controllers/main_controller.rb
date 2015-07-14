@@ -4,19 +4,14 @@ module Main
     model :store
 
     def index
-      
-    end
 
-    def onboard_user
-      Mailer.deliver('app/main/views/mailers/onboard.email', {to: page._new_email, :via => :smtp})
     end
 
     def add_user
       _users << { name: page._new_name, email: page._new_email }
-      if onboard_user
-        page._new_name = ''
-        page._new_email = ''
-      end
+      MailTasks.onboard_user(page._new_email)
+      page._new_name = ''
+      page._new_email = ''
     end
 
     private

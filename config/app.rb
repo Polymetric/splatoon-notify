@@ -7,9 +7,9 @@ Volt.configure do |config|
   #######################################
   # Basic App Info (stuff you should set)
   #######################################
-  config.domain = 'splatoon-notify/.com'
+  config.domain = 'polymetric.me'
   config.app_name = 'splatoon-notify'
-  config.mailer.from = 'Splatoon-Notify/ <no-reply@splatoon-notify/.com>'
+  config.mailer.from = 'Splatoon-Notify/ <splatoon@polymetric/.me>'
 
   ############
   # App Secret
@@ -41,13 +41,8 @@ Volt.configure do |config|
 
   config.db_driver = 'mongo'
   config.db_name = (config.app_name + '_' + Volt.env.to_s)
-
-  if ENV['MONGO_URL'].present?
-    config.db_uri = ENV['MONGO_URL'] # you will have to set this on heroku
-  else
-    config.db_host = 'localhost'
-    config.db_port = 27017
-  end
+  config.db_host = 'localhost'
+  config.db_port = 27017
 
   #####################
   # Compression options
@@ -85,11 +80,12 @@ Volt.configure do |config|
   config.mailer.via = :smtp
   config.mailer.via_options = {
     :address        => 'smtp.mandrillapp.com',
-    :port           => '587',
+    :port           => '2525',
+    :enable_starttls_auto => true,
     :user_name      => 'austin.is.paxton@gmail.com',
     :password       => 'cDrHMEmltOtIub2SiZVSiQ',
     :authentication => :login, # :plain, :login, :cram_md5, no auth by default
-    :domain         => 'splatoon-notify.work' # the HELO domain provided by the client to the server
+    :domain         => 'polymetric.me' # the HELO domain provided by the client to the server
   }
 
   #############

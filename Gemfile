@@ -22,6 +22,9 @@ gem 'volt-mailer', '~> 0.1.0'
 gem 'faye-websocket', '0.9.2'
 gem 'websocket-driver', '0.5.4'
 
+# To schedule map updates.
+gem 'rufus-scheduler'
+
 # Use rbnacl for message bus encrpytion
 # (optional, if you don't need encryption, disable in app.rb and remove)
 #
