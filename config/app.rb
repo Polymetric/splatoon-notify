@@ -8,7 +8,7 @@ Volt.configure do |config|
   # Basic App Info (stuff you should set)
   #######################################
   config.domain = 'splatoon-notify/.com'
-  config.app_name = 'splatoon-notify/'
+  config.app_name = 'splatoon-notify'
   config.mailer.from = 'Splatoon-Notify/ <no-reply@splatoon-notify/.com>'
 
   ############
