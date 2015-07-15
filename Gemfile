@@ -25,6 +25,10 @@ gem 'websocket-driver', '0.5.4'
 # To schedule map updates.
 gem 'rufus-scheduler'
 
+# Send some sms.
+gem 'sms-easy'
+gem 'actionmailer'
+
 # Use rbnacl for message bus encrpytion
 # (optional, if you don't need encryption, disable in app.rb and remove)
 #

@@ -8,10 +8,13 @@ module Main
     end
 
     def add_user
-      _users << { name: page._new_name, email: page._new_email }
-      MailTasks.onboard_user(page._new_email)
+      _users << { name: page._new_name, phone: page._new_phone, carrier: page._new_carrier }
+      sleep(1)
+      SmsTasks.onboard_user(page._new_phone, page._new_carrier)
+      sleep(1)
       page._new_name = ''
-      page._new_email = ''
+      page._new_phone = ''
+      page._new_carrier = ''
     end
 
     private

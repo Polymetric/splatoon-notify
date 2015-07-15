@@ -9,12 +9,22 @@ SPLATOON/NOTIFY
 
         <h1 class="text-center">SPLATOON/NOTIFY</h1>
         <h5>We send you the new Splatoon maps whenever they rotate.</h5>
-        <h2 class="text-center">We'll just need a name and email.</h2>
+        <h2 class="text-center">We'll just need a name, phone, and carrier.</h2>
 
         <div class="form-group">
           <form class="form-inline" role="form">
             <input class="form-control" type="text" value="{{ page._new_name }}" placeholder="Name"/>
-            <input class="form-control" type="text" value="{{ page._new_email }}" placeholder="Email"/>
+            <input class="form-control" type="text" value="{{ page._new_phone }}" placeholder="Phone"/>
+            <select class="form-control" value="{{ page._new_carrier }}" placeholder="Carrier">
+              <option value="at&t">AT&T</option>
+              <option value="sprint">Sprint</option>
+              <option value="t-mobile">T-Mobile</option>
+              <option value="t-mobile-uk">T-Mobile UK</option>
+              <option value="virgin">Virgin</option>
+              <option value="verizon">Verizon</option>
+              <option value="vodafone-jp-tokyo">Vodafone JP Tokyo</option>
+              <option value="alltel">Alltel</option>
+            </select>
           </form>
         </div>
 
