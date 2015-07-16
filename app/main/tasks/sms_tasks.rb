@@ -5,8 +5,8 @@ class SmsTasks < Volt::Task
   end
 
   def send_sms
-    store._players.each.then do |player|
-      Easy.deliver(player._phone, player,_carrier, "Splatoon/Notify! Turf War: " + MapTasks.printmap(0) + MapTasks.printmap(1) + " Ranked: " + MapTasks.printmap(2) + MapTasks.printmap(3) )
+    store._players.each do |player|
+      Easy.deliver(player._phone, player._carrier, "Splatoon/Notify!\nTurf War:\n#{MapTasks.printmap(0).sync}\n#{MapTasks.printmap(1).sync}\nRanked:\n#{MapTasks.printmap(2).sync}\n#{MapTasks.printmap(3).sync}", :limit => 512 )
     end
   end
 
