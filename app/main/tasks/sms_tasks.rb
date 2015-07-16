@@ -5,8 +5,8 @@ class SmsTasks < Volt::Task
   end
 
   def send_sms
-    _users.each do |user|
-      Easy.deliver(user['phone'], user['carrier'], "Splatoon/Notify! Turf War: " + MapTasks.printmap(0) + MapTasks.printmap(1) + " Ranked: " + MapTasks.printmap(2) + MapTasks.printmap(3) )
+    store._players.each.then do |player|
+      Easy.deliver(player._phone, player,_carrier, "Splatoon/Notify! Turf War: " + MapTasks.printmap(0) + MapTasks.printmap(1) + " Ranked: " + MapTasks.printmap(2) + MapTasks.printmap(3) )
     end
   end
 
