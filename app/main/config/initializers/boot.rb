@@ -19,3 +19,5 @@ $mapnames = { 'Urchin Underpass' => 'eefffc33ee1956b7b70e250d5835aa67be9152d42bc
            'Moray Towers' => '6a6c3a958712adedcceb34f719e220ab0d840d8753e5f51b089d363bd1763c91'
           }
 $mapnames_current = []
+
+MapTasks.getmaps
