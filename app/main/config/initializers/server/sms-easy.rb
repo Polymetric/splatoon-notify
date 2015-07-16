@@ -6,8 +6,8 @@ ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.mandrillapp.com',
   :port           => '2525',
   :enable_starttls_auto => true,
-  :user_name      => 'austin.is.paxton@gmail.com',
-  :password       => 'cDrHMEmltOtIub2SiZVSiQ',
+  :user_name      => ENV['MANDRILL_USER'],
+  :password       => ENV['MANDRILL_PASS'],
   :authentication => :login # :plain, :login, :cram_md5, no auth by default
 }
 

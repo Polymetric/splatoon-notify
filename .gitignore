@@ -7,6 +7,7 @@ tmp
 .sass-cache
 .DS_Store
 compiled
+config/initializers/env.rb
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
