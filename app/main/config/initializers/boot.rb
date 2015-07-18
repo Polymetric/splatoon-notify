@@ -18,6 +18,6 @@ $mapnames = { 'Urchin Underpass' => 'eefffc33ee1956b7b70e250d5835aa67be9152d42bc
            'Bluefin Depot' => '1ac0981d03c18576d9517f40461b66a472168a8f14f6a8714142af9805df7b8c',
            'Moray Towers' => '6a6c3a958712adedcceb34f719e220ab0d840d8753e5f51b089d363bd1763c91'
           }
-$mapnames_current = []
 
+$mapnames_current = []
 MapTasks.getmaps
