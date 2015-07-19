@@ -1,1 +1,20 @@
 // Place your apps css here
+
+body {
+  background-image: url("/assets/public/bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: #FFFFFF
+}
+
+.btn-sm {
+  background-color: #A800BF
+}
+
+.btn-sm:hover {
+  background-color: #870099
+}

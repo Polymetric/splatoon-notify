@@ -7,6 +7,10 @@ module Main
 
     end
 
+    def page_not_found
+      
+    end
+
     def add_user
       _players << { name: page._new_name, phone: page._new_phone, carrier: page._new_carrier }
       SmsTasks.onboard_user(page._new_phone, page._new_carrier)
