@@ -85,7 +85,7 @@ Volt.configure do |config|
     :user_name      => ENV['MANDRILL_USER'],
     :password       => ENV['MANDRILL_PASS'],
     :authentication => :login, # :plain, :login, :cram_md5, no auth by default
-    :domain         => 'polymetric.me' # the HELO domain provided by the client to the server
+    :domain         => 'splatoon-notify.work' # the HELO domain provided by the client to the server
   }
 
   #############
