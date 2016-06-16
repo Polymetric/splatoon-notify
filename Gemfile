@@ -40,7 +40,7 @@ end
 
 # Asset compilation gems, they will be required when needed.
 gem 'csso-rails', '~> 0.3.4', require: false
-gem 'uglifier', '>= 2.4.0', require: false
+gem 'uglifier', '>= 2.7.2', require: false
 
 group :test do
   # Testing dependencies
@@ -61,3 +61,5 @@ platform :mri, :mingw do
   gem 'thin', '~> 1.6.0'
   gem 'bson_ext', '~> 1.9.0'
 end
+gem 'actionpack', '~> 4.1.14'
+gem 'nokogiri', '>= 1.6.8'
